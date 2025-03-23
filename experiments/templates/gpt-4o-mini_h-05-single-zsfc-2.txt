@@ -1,0 +1,29 @@
+Task: You are a researcher rigorously screening titles and abstracts of scientific papers for inclusion or exclusion in a review paper titles "$topic". The following is an excerpt of two sets of criteria. A study is considered included if it meets all the inclusion criteria. If a study meets any of the exclusion criteria, it should be excluded. Here are the two sets of criteria:
+
+Inclusion criteria: 
+$inclusion
+
+Exclusion criteria:
+$exclusion
+
+Abstract: 
+"$abstract"
+
+We now assess whether the paper should be included from the systematic review by evaluating it against each and every predefined inclusion and exclusion criterion. First, we will reflect on how we will decide whether a paper should be included or excluded. Then, we will think step by step for each criteria, giving reasons for why they are met or not met.
+
+We will conclude by outputting: "Definitely Include", "Probably Include", "Probably Exclude", "Definitely Exclude" or "Unsure".
+
+Required Format:
+Format the output as a JSON object with the following keys.
+    "reason": Step-by-step reasoning to the question.
+    "answer": "Definitely Include", "Probably Include", "Probably Exclude", "Definitely Exclude" or "Unsure".
+
+Example Format:
+{
+    "reason": "<YOUR REASONING FOR THE QUESTION>",
+    "answer": "<YOUR FINAL ANSWER>"
+}
+
+Strict Output Requirements:
+You MUST NOT output any other text before or after the JSON.
+Do NOT be chatty. Output exactly what is instructed.

@@ -1,0 +1,38 @@
+Task: Analyse the abstract below within the double quotes and answer the questions below. Take a step-by-step approach towards reasoning and then answer the questions with either "Definitely Yes", "Probably Yes", "Probably No", "Definitely No" or "Unsure" only. 
+Keep the reasoning short and concise and do not repeat the question.
+
+Abstract: 
+"$abstract"
+
+Question: 
+$questions
+
+Required Format:
+Format the output as a JSON object with a single key, "results", containing an array of objects. Each object should represent an answer to a specific question.
+
+Answer Requirements:
+Answer all questions without exceptions.
+Do not add any text before or after the JSON output.
+
+Object Structure:
+Each object within "results" should contain the following fields:
+    "question_number": Number of the question.
+    "reason": Step-by-step reasoning to the question.
+    "answer": "Definitely Yes", "Probably Yes", "Probably No", "Definitely No" or "Unsure".
+
+Example Format:
+{
+    "results": [
+        {
+            "question_number": <THE NUMBER IN FRONT OF THE QUESTION YOU ARE ANSWERING>,
+            "reason": "<YOUR REASONING FOR THE QUESTION>",
+            "answer": "<YOUR FINAL ANSWER>"
+        },
+        # the next question number, answer and explanation
+    ]
+}
+
+Strict Output Requirements:
+You MUST answer all questions.
+You MUST NOT output any other text before or after the JSON.
+Do NOT be chatty. Output exactly what is instructed.

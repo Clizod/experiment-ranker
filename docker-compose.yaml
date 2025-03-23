@@ -1,0 +1,13 @@
+services:
+  jupyter:
+    env_file:
+      - .env
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - '8888:8888'
+    volumes:
+      - ./:/app
+    environment:
+      - PYTHONPATH=$${PYTHONPATH}:/app/src:/app/tests

@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "clizod-ranker"
+version = "0.0.1"
+authors = [
+    { name="Masood Sujau", email="masood.maumoon@gmail.com" }
+]
+description = "Ranker utilizities package"
+readme ="README.md"
+dependencies = [
+    "os",
+    "string",
+    "time",
+    "datetime",
+    "asyncio",
+    "random",
+    "openai",
+    "tiktoken",
+    "pandas",
+]
+[tool.setuptools.packages.find]
+where = ["src"]
