@@ -1,6 +1,6 @@
-# CliZod - Abstract Classifier
+# Ranker experiments
 
-This repo contains the jupyter notebooks for running the experiment the study **Accelerating Disease Model Parameter Extraction: An LLM-based Ranking
+This repo contains the jupyter notebooks for running the experiments for the study **Accelerating Disease Model Parameter Extraction: An LLM-based Ranking
 Approach to Select Initial Studies For Literature Review Automation**. 
 Please see notbooks directory.
 
